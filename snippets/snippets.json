@@ -10,5 +10,35 @@
 			""
 		],
 		"description": "A describe block for Jest"
-	}
+	},
+	"functionalComponent": {
+    "prefix": "rfc",
+    "body": [
+			"const ${1:${TM_FILENAME/(.*)\\..+$/$1/}} = () => {",
+      "  return (",
+      "    <div />",
+      "  );",
+      "}",
+      "",
+			"export default ${1:${TM_FILENAME/(.*)\\..+$/$1/}};",
+			""
+    ],
+    "description": "Create ReactJS Functional Component"
+  },
+	"styledFunctionalComponent": {
+    "prefix": "rsfc",
+    "body": [
+      "// import * as S from './styles';",
+      "",
+			"const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => {",
+      "  return (",
+      "    <div />",
+      "  );",
+      "}",
+      "",
+			"export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}};",
+			""
+    ],
+    "description": "Create ReactJS Functional Component with Styled Components"
+  }
 }
