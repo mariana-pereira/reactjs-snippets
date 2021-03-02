@@ -1,6 +1,6 @@
 {
 	"Jest Test": {
-		"prefix": ["test"],
+		"prefix": "test",
 		"body": [
 			"describe('', () => {",
 			"  test('', () => {",
@@ -14,7 +14,10 @@
 	"functionalComponent": {
     "prefix": "rfc",
     "body": [
-			"const ${1:${TM_FILENAME/(.*)\\..+$/$1/}} = () => {",
+			"import React from 'react';",
+      "",
+      "",
+			"const ${1:${TM_FILENAME/(.*)\\..+$/$1/}}: React.FC = () => {",
       "  return (",
       "    <div />",
       "  );",
@@ -28,9 +31,11 @@
 	"styledFunctionalComponent": {
     "prefix": "rsfc",
     "body": [
+			"import React from 'react';",
+      "",
       "// import * as S from './styles';",
       "",
-			"const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => {",
+			"const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}: React.FC = () => {",
       "  return (",
       "    <div />",
       "  );",
@@ -40,5 +45,19 @@
 			""
     ],
     "description": "Create ReactJS Functional Component with Styled Components"
+  },
+  "api": {
+    "prefix": "api",
+    "body": [
+      "import axios from 'axios';",
+      "",
+      "const api = axios.create({",
+      "  baseURL: '${1}',",
+      "});",
+      "",
+      "export default api;",
+      ""
+    ],
+    "description": "Create Axios Configuration file"
   }
 }
