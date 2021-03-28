@@ -10,5 +10,22 @@
 			""
 		],
 		"description": "A describe block for Jest"
-	}
+	},
+  "functionalComponent": {
+    "prefix": "rfc",
+    "body": [
+			"import React from 'react';",
+      "",
+      "",
+			"const ${1:${TM_FILENAME/(.*)\\..+$/$1/}}: React.FC = () => {",
+      "  return (",
+      "    <div />",
+      "  );",
+      "}",
+      "",
+			"export default ${1:${TM_FILENAME/(.*)\\..+$/$1/}};",
+			""
+    ],
+    "description": "Create ReactJS Functional Component"
+  }
 }
