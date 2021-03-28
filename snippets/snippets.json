@@ -17,7 +17,7 @@
 			"import React from 'react';",
       "",
       "",
-			"const ${1:${TM_FILENAME/(.*)\\..+$/$1/}}: React.FC = () => {",
+			"const ${1:${TM_FILENAME/(.*)\\..+$/$1/}} = () => {",
       "  return (",
       "    <div />",
       "  );",
