@@ -45,5 +45,19 @@
 			""
     ],
     "description": "Create ReactJS Functional Component with Styled Components"
+  },
+  "api": {
+    "prefix": "api",
+    "body": [
+      "import axios from 'axios';",
+      "",
+      "const api = axios.create({",
+      "  baseURL: '${1}',",
+      "});",
+      "",
+      "export default api;",
+      ""
+    ],
+    "description": "Create Axios Configuration file"
   }
 }
