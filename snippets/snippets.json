@@ -14,9 +14,6 @@
 	"functionalComponent": {
     "prefix": "rfc",
     "body": [
-			"import React from 'react';",
-      "",
-      "",
 			"const ${1:${TM_FILENAME/(.*)\\..+$/$1/}} = () => {",
       "  return (",
       "    <div />",
@@ -31,8 +28,6 @@
 	"styledFunctionalComponent": {
     "prefix": "rsfc",
     "body": [
-			"import React from 'react';",
-      "",
       "// import * as S from './styles';",
       "",
 			"const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => {",
