@@ -11,6 +11,16 @@
 		],
 		"description": "A describe block for Jest"
 	},
+  "Jest It Block": {
+		"prefix": "it",
+		"body": [
+			"  it('', () => {",
+			"",
+			"  });",
+			""
+		],
+		"description": "An it block for Jest"
+	},
   "functionalComponent": {
     "prefix": "rfc",
     "body": [
