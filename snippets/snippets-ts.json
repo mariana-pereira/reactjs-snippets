@@ -51,6 +51,22 @@
     ],
     "description": "Create ReactJS Functional Component with Styled Components"
   },
+  "styledComponent": {
+    "prefix": "rc",
+    "body": [
+      "import React, { Component } from 'react';",
+      "",
+      "// import { Container } from './styles';",
+      "",
+      "export default class ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} extends Component {",
+      "  render() {",
+      "    return <div />;",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "Create ReactJS Stateful Component"
+  },
   "api": {
     "prefix": "api",
     "body": [
