@@ -14,9 +14,9 @@
   "Jest It Block": {
 		"prefix": "it",
 		"body": [
-			"  it('', () => {",
+			"it('', () => {",
 			"",
-			"  });",
+			"});",
 			""
 		],
 		"description": "An it block for Jest"
